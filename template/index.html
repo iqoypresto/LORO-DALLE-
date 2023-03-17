@@ -1,0 +1,179 @@
+{% extends "base.html" %}
+
+{% block content %}
+<style>
+    div.hero {
+        padding-top: 250px;
+        font-family: 'Plus Jakarta Sans', sans-serif;
+    }
+    section.bg{
+        width: 100%;
+        height: 800px;
+        background: url("../static/img/00.jpg");
+        background-size: cover;
+    }
+    section.def{
+        width: 100%;
+        height: 520px;
+        background-color: #035956;
+    }
+    a.home{
+        color: #035956;
+        font-weight: bolder;
+    }
+    button{
+        background-color: #035956;
+        color: white;
+        border: solid;
+        border-radius: 20px;
+        width: 150px;
+        height: 42px;
+    }
+    button:hover{
+        background-color: #14726f;
+        transition: 0.3s;
+    }
+    button:not(:hover){
+        transition: 0.3s;
+    }
+    .card{
+        transition: 0.2s ease;
+        box-shadow: 0 4px 6px 0 rgba(22, 22, 26, 0.18);
+    }
+    .hover-zoom:hover{
+        transform: scale(1.07);
+    }
+    section#artikel{
+        width: 100%;
+        height: 598px;
+        background-color: #035956;
+        padding-top: 80px;
+        margin-top: 80px;
+    }
+</style>
+<section class="bg">
+    <div class="hero ms-5 ps-5">
+        <p class="ps-5 ms-5" style="font-weight: 700; font-size: 64px; color: white;">Ayo Tukarkan <span style="color: #035956;">Sampahmu</span></p>
+        <p class="ps-5 ms-5" style="font-weight: 700; font-size: 64px; margin-top: -20px; color: white;">Menjadi <span style="color: #035956;">Bermanfaat</span></p>
+        <p class="ps-5 ms-5" style="color: white; font-weight: 500; font-size: 32px;">Sampah ta, Rejeki ta</p>
+    </div>
+</section>
+<section class="def">
+    <div class="def container">
+        <div class="row">
+            <div class="col-12">
+                <a href="#" class="nav-link"><p class="text-center" style="color: white; padding-top: 10px; font-size: 16px;">Lihat Selengkapnya   <i class="fa-solid fa-chevron-down"></i></p></a>
+            </div>
+        </div>
+        <div class="row pt-5 mt-5">
+            <div class="col">
+                <p class="text-center" style="color: white; font-size: 32px; ">Apa itu</p>
+                <p class="text-center" style="color: white; font-size: 64px; font-weight: 600;">Loro Dalle'</p>
+            </div>
+        </div>
+        <div class="row pt-5 mt-5">
+            <div class="col">
+                <p class="text-center" style="color: white;"><b>Loro Dalle'</b> adalah Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consectetur repudiandae dolorum rerum dolorem obcaecati voluptas placeat lab</p>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="layanan" id="layanan-kami">
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <p class="text-center" style="font-size: 32px; font-weight: 700; color: #035956; padding-top: 80px;">Layanan Kami</p>
+            </div>
+        </div>
+        <div class="row justify-content-center" style="padding-top: 80px;">
+            <div class="col-md-12 col-lg-6">
+                <div class="card bg-img hover-zoom" style="width: 600px; height: 700px;">
+                    <div class="img-layanan">
+                        <img src="../static/img/02.jpg" class="card-img-top layimg" alt="...">
+                    </div>
+                    <div class="card-body">
+                      <p class="card-title" style="font-size: 48px; font-weight: 700; color: #035956;">Pick Up</p>
+                      <p class="card-text" style="color: #035956;">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Corporis ipsa suscipit excepturi aspernatur, culpa accusamus reprehenderit quae quaerat explicabo corrupti nam tempore facilis vero asperiores at id cumque labore obcaecati laborum illo? Dignissimos iure rerum, non omnis explicabo maiores accusantium dolorum recusandae officiis debitis magni necessitatibus voluptatibus commodi, temporibus fuga.</p>
+                      <div class="col text-center">
+                        <button>Selengkapnya</button>
+                      </div>
+                      
+                    </div>
+                  </div>
+            </div>
+            <div class="col-md-12 col-lg-6">
+                <div class="card hover-zoom" style="width: 600px; height: 700px;;">
+                    <div class="img-layanan">
+                        <img src="../static/img/01.jpg" class="card-img-top layimg" alt="...">
+                    </div>
+                    <div class="card-body">
+                      <p class="card-title" style="font-size: 48px; font-weight: 700; color: #035956;">Drop Off</p>
+                      <p class="card-text" style="color: #035956;">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore tempora a optio non impedit consequatur beatae, dolores nesciunt totam id ipsa nemo sed culpa cum? Iure odit aliquam eaque voluptas tenetur exercitationem, enim ipsum. Vel, dignissimos illo iure consequatur laboriosam itaque esse iste odit dolorum asperiores, sit earum? Blanditiis, unde?</p>
+                      <div class="col text-center">
+                        <button>Selengkapnya</button>
+                      </div>
+                      
+                    </div>
+                  </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section id="produk">
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <p class="text-center" style="font-size: 32px; font-weight: 700; color: #035956; padding-top: 80px;">Produk</p>
+            </div>
+        </div>
+        <div class="row g-0 justify-content-center" style="padding-top: 80px;">
+            <div class="col-auto" style="padding-right: 96px;">
+                <div style="width: 250px; height: 324px;">
+                    <img src="../static/img/03.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <p class="card-text" style="font-size: 24px; font-weight: 600; margin-top: 16px;">Produk 1</p>
+                      <p class="card-text" style="font-size: 16px; font-weight: 600; margin-top: -10px;">Rp. 10.000.000</p>
+                    </div>
+                  </div>
+            </div>
+            <div class="col-auto" style="padding-right: 96px;">
+                <div style="width: 250px; height: 324px;">
+                    <img src="../static/img/03.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <p class="card-text" style="font-size: 24px; font-weight: 600; margin-top: 16px;">Produk 1</p>
+                        <p class="card-text" style="font-size: 16px; font-weight: 600; margin-top: -10px;">Rp. 10.000.000</p>
+                    </div>
+                  </div>
+            </div>
+            <div class="col-auto" style="padding-right: 96px;">
+                <div style="width: 250px; height: 324px;">
+                    <img src="../static/img/03.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <p class="card-text" style="font-size: 24px; font-weight: 600; margin-top: 16px;">Produk 1</p>
+                        <p class="card-text" style="font-size: 16px; font-weight: 600; margin-top: -10px;">Rp. 10.000.000</p>
+                    </div>
+                  </div>
+            </div>
+            <div class="col-auto">
+                <div style="width: 250px; height: 324px;">
+                    <img src="../static/img/03.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <p class="card-text" style="font-size: 24px; font-weight: 600; margin-top: 16px;">Produk 1</p>
+                        <p class="card-text" style="font-size: 16px; font-weight: 600; margin-top: -10px;">Rp. 10.000.000</p>
+                    </div>
+                  </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section id="artikel">
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <p class="text-center" style="font-size: 32px; font-weight: 700; color: white;">Artikel</p>
+            </div>
+        </div>
+    </div>
+</section>
+<br><br><br><br><br><br><br><br>
+{% endblock %}

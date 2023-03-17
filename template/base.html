@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Loro Dalle'</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter&family=Montserrat:wght@100&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/9d4c5727f2.js" crossorigin="anonymous"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <style>
+      .navbar {
+        height: 80px;
+        background-color: white;
+        transition: top 0.3s;
+      }
+
+      .logo-nav{
+        color: #035956;
+        font-family: 'Inter', sans-serif;
+        font-weight: bolder;
+      }
+      body{
+        font-family: 'Plus Jakarta Sans', sans-serif;
+      }
+      a.home:hover, a.services:hover, a.transaksi:hover{
+        color: #035956;
+        opacity: 1;
+      }
+      .active{
+        color: #035956
+      }
+    </style>
+    
+    {% block style %}
+    {% endblock %}
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg fixed-top" id="navbar">
+        <div class="container">
+          <a class="navbar-brand logo-nav" href="#">LORO DALLE'</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item">
+                <a class="home nav-link pe-5" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="services nav-link pe-5" href="#layanan-kami">Our Services</a>
+              </li>
+              <li class="nav-item">
+                <a class="transaksi nav-link" href="#">Transaksi</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+    {% block content %}
+    {% endblock %}
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/js/all.min.js" integrity="sha512-Tn2m0TIpgVyTzzvmxLNuqbSJH3JP8jm+Cy3hvHrW7ndTDcJ1w5mBiksqDBb8GpE2ksktFvDB/ykZ0mDpsZj20w==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+    <script>
+      var prevScrollpos = window.pageYOffset;
+      window.onscroll = function() {
+        var currentScrollPos = window.pageYOffset;
+        if (prevScrollpos > currentScrollPos) {
+          document.getElementById("navbar").style.top = "0";
+        } else {
+          document.getElementById("navbar").style.top = "-80px";
+        }
+        prevScrollpos = currentScrollPos;
+      }
+    </script>
+  </body>
+</html>
